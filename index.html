@@ -1,0 +1,233 @@
+<html><head><base href="." /><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OrangeMeme - Assinatura de Memes com Suco de Laranja</title>
+<style>
+:root {
+  --orange: #ff8c00;
+  --dark-orange: #ff6b00;
+  --light-orange: #ffa500;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #fff9f0, #ffe4b5);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  background-color: var(--orange);
+  padding: 20px 0;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo svg {
+  animation: squeeze 2s infinite;
+}
+
+@keyframes squeeze {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(0.9) rotate(5deg); }
+}
+
+.pricing {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.plan {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+  transition: transform 0.3s;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.plan:hover {
+  transform: translateY(-10px);
+}
+
+.plan h2 {
+  color: var(--dark-orange);
+  margin-bottom: 20px;
+}
+
+.price {
+  font-size: 2.5em;
+  color: var(--orange);
+  margin: 20px 0;
+}
+
+.features {
+  list-style: none;
+  margin: 20px 0;
+}
+
+.features li {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.btn {
+  background: var(--orange);
+  color: white;
+  padding: 15px 30px;
+  border-radius: 25px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: var(--dark-orange);
+}
+
+.hero {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.hero h1 {
+  font-size: 3em;
+  color: var(--dark-orange);
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.meme-preview {
+  margin: 50px 0;
+  text-align: center;
+}
+
+.meme-container {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  display: inline-block;
+  margin: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+  <div class="container">
+    <div class="logo">
+      <svg width="50" height="50" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="45" fill="#ff8c00"/>
+        <path d="M50 20 C 60 40, 80 50, 50 80" stroke="white" stroke-width="3" fill="none"/>
+        <circle cx="35" cy="40" r="5" fill="white"/>
+        <circle cx="65" cy="40" r="5" fill="white"/>
+        <path d="M35 60 Q 50 70 65 60" stroke="white" stroke-width="3" fill="none"/>
+      </svg>
+      <h1 style="color: white;">OrangeMeme</h1>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+  <section class="hero">
+    <h1>Crie Memes Fresquinhos como Suco de Laranja!</h1>
+    <p>Assine nosso serviço e tenha acesso a templates exclusivos, ferramentas profissionais e muito mais!</p>
+  </section>
+
+  <div class="meme-preview">
+    <div class="meme-container">
+      <svg width="300" height="300" viewBox="0 0 300 300">
+        <rect width="300" height="300" fill="#ffd700"/>
+        <path d="M100 80 L80 250 Q80 270, 220 270 L200 80 Z" fill="#ffffff" fill-opacity="0.3"/>
+        <path d="M100 80 L80 250 Q80 270, 220 270 L200 80 Z" fill="none" stroke="#ff8c00" stroke-width="3"/>
+        <path d="M100 120 L85 240 Q85 260, 215 260 L195 120 Z" fill="#ff8c00"/>
+        <path d="M140 60 L140 240" stroke="#ff4500" stroke-width="8"/>
+        <path d="M140 60 C140 60, 160 50, 180 60" stroke="#ff4500" stroke-width="8"/>
+        <rect x="110" y="140" width="20" height="20" fill="#ffffff" fill-opacity="0.5"/>
+        <rect x="150" y="160" width="25" height="25" fill="#ffffff" fill-opacity="0.5"/>
+        <rect x="170" y="190" width="15" height="15" fill="#ffffff" fill-opacity="0.5"/>
+      </svg>
+    </div>
+  </div>
+
+  <section class="pricing">
+    <div class="plan">
+      <h2>Plano Laranjinha</h2>
+      <div class="price">R$19,90/mês</div>
+      <ul class="features">
+        <li>100 templates básicos</li>
+        <li>Exportação em HD</li>
+        <li>Suporte por email</li>
+        <li>Biblioteca de emoji cítricos</li>
+      </ul>
+      <a href="https://orangememe.com/signup/basic" class="btn">Começar Agora</a>
+    </div>
+
+    <div class="plan">
+      <h2>Plano Laranjão</h2>
+      <div class="price">R$39,90/mês</div>
+      <ul class="features">
+        <li>Templates ilimitados</li>
+        <li>Exportação em 4K</li>
+        <li>Suporte 24/7</li>
+        <li>Biblioteca completa de emojis</li>
+        <li>Ferramentas de edição avançadas</li>
+      </ul>
+      <a href="https://orangememe.com/signup/premium" class="btn">Assinar Premium</a>
+    </div>
+
+    <div class="plan">
+      <h2>Plano Pai de Família (Que delícia, cara!)</h2>
+      <div class="price">R$99,90/mês</div>
+      <ul class="features">
+        <li>Tudo do Plano Laranjão</li>
+        <li>API para automação</li>
+        <li>Suporte prioritário</li>
+        <li>Criação de templates personalizados</li>
+        <li>Análise de engajamento</li>
+      </ul>
+      <a href="https://orangememe.com/signup/enterprise" class="btn">Contacte-nos</a>
+    </div>
+  </section>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const plans = document.querySelectorAll('.plan');
+    
+    plans.forEach(plan => {
+        plan.addEventListener('mouseover', function() {
+            this.style.transform = 'translateY(-10px)';
+        });
+        
+        plan.addEventListener('mouseout', function() {
+            this.style.transform = 'translateY(0)';
+        });
+    });
+});
+</script>
+
+</body></html>
